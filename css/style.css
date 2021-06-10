@@ -1,0 +1,217 @@
+/*
+* applies to everything
+*{
+    margin: 0px;
+    padding: 0px;
+}
+*/
+
+body{
+    background-color: #e9e6c8;
+    color: #6324ac;
+/*    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+*/
+/*shorter version of top*/
+    font: normal 16px Arial, Helvetica, sans-serif;
+    line-height: 1.6em;
+    margin: 0;
+
+}
+
+.clr{
+    clear: both;
+}
+
+a{
+    text-decoration: none;
+    color: magenta;
+}
+
+a:hover{
+    color:greenyellow;
+}
+
+a:active{
+    color: indianred
+}
+
+a:visited{
+
+}
+
+.button{
+    background-color: orchid;
+    color: darkmagenta;
+    padding: 10px 15px; /*adds 10px padding to top and bottom, and 15px to right and left*/
+    border: none;
+}
+
+.button:hover{
+    background-color: lightcoral;
+    color: teal;
+}
+
+.container{
+    /*percents can change with changing window size, constant px don't*/
+    width: 80%;
+    margin: auto;
+}
+
+.box-1{
+    background-color: rgb(143, 206, 41);
+    color: rgb(116, 60, 190);
+   /* 
+   border-top-style: dotted;
+    border-right-style: inset
+    */
+    border: 5px rgb(59, 219, 206) solid;
+    padding: 10px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.box-1 h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.0005em;
+    word-spacing: .025em;
+}
+
+.box-2{
+    background-color: rgb(36, 151, 145);
+    border: 5px rgb(128, 4, 128) solid;
+    color: rgb(184, 39, 82);
+    padding: 10px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.categories{
+    border: 1px rgb(9, 101, 187) solid;
+    padding:10px;
+    border-radius: 25px;
+}
+
+.categories h2{
+    text-align: center;
+}
+
+.categories ul{
+    list-style: none;
+    padding: 0px;
+    padding-left:10px;
+}
+
+.categories li{
+    padding-bottom: 6px;
+    border-bottom: dotted 1px #6324ac;
+    list-style-image: url('../images/fuck2.png');
+}
+
+.my-form{
+    padding: 20px;
+}
+
+.my-form .form-group{
+    padding-bottom: 15px;
+}
+
+.my-form label{
+    display: block;
+}
+
+.my-form input[type="text"], .my-form textarea{
+    padding: 8px;
+    width: 100%
+}
+
+.block{
+    float: left;
+    width: 33.3%;
+    border: 1px solid #6324ac;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#main-block{
+    float: left;
+    width: 70%;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: rgb(59, 219, 206);
+    color: rgb(184, 39, 82);
+}
+
+#sidebar{
+    float: right;
+    width: 30%;
+    background-color: rgb(184, 39, 82);
+    color: rgb(59, 219, 206);
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.p-box{
+    width: 538px;
+    height: 439px;
+    border: 1px solid rgb(143, 206, 41);
+    margin-top: 30px;
+    position: relative;
+    background-image: url('../images/chainsaw2.png');
+    /*
+    pushes image to the right 100px and down 200px
+    background-position: 100px 200px;
+
+    keeps only one image, no repeat
+    background-repeat: no-repeat;
+
+    centers background at it's own center
+    background-position: center center;
+
+    */
+}
+
+.p-box h1{
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    color: rgb(31, 177, 145);
+}
+
+.p-box h2{
+    position: absolute;
+    bottom: 5px;
+    left: 80px;
+    color: rgb(145, 255, 0);
+}
+
+.p-box h3{
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+    color: rgb(172, 45, 204);
+}
+
+.fix-me{
+    position: fixed;
+    top:400px;
+}
+
+.my-shit li:first-child{
+    background: rgb(143, 206, 41);
+}
+.my-shit li:last-child{
+    background: rgb(31, 177, 145);
+}
+.my-shit li:nth-child(5){
+    background: rgb(184, 39, 82);
+}
+.my-shit li:nth-child(even){
+    background: rgb(172, 45, 204);
+}
